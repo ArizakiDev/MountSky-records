@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste d'artistes</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .label {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #3d3d3d;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      position: relative;
+      animation: moveCard 2s infinite alternate ease-in-out;
+    }
+    .label:hover {
+      animation-play-state: paused;
+    }
+    .label img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .label h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .label p {
+      font-size: 16px;
+      margin: 0;
+    }
+    @keyframes moveCard {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(20px); }
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff6b6b;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease-in-out;
+    }
+    .button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+    <center>
+  <h1>Liste des artistes</h1>
+  <div class="label">
+    <img src="./images/Yutwz.png" alt="Artiste 1">
+    <h2>Yutwz</h2>
+    <p>instagram: arizaki.xyz <br>
+        Youtube: Yutwz <br>
+        Spotify: Yutwz
+    </p>
+  </div>
+<br>
+<br>
+<br>
+<a href="pages.html" class="button">Retourner à l'accueil</a>
+</center>
+</body>
+</html>
